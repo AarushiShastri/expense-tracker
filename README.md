@@ -3,7 +3,7 @@
 A simple and interactive expense tracker built with **HTML, CSS, and JavaScript**.
 
 > **Source Inspiration**: Build an Expense Tracker with HTML, CSS, and JavaScript (GeeksforGeeks)  
-> This project has been extended with several additional features for improved usability, data management, and visualization.
+> This project has been extended with SOME additional features for improved usability, data management, and visualization.
 
 ---
 
