@@ -1,22 +1,39 @@
-# expense-tracker
-Simple Expense Tracker made using HTML, CSS and JavaScript (for practice)
-Source: Build an Expense Tracker with HTML CSS and JavaScript
-What I added:
-  1. Improved Categorization
-  Dynamic Category Management:
-    Users can add new categories and delete existing ones.
-    Both the expense form and filter dropdowns update automatically to reflect the current list of categories.
+# Expense Tracker
 
-  2. Simple Data Visualization (Chart.js)
-  Interactive Pie Chart:
-    Added a pie chart using Chart.js to visually display spending by category.
-    The chart updates whenever expenses or categories change.
+A simple and interactive expense tracker built with **HTML, CSS, and JavaScript**.
 
-  3. Basic Budgeting
-  Set a Monthly Budget:
-    Users can input a budget amount.
-    The app shows a warning if the user is close to or exceeds their budget.
+> **Source Inspiration**: Build an Expense Tracker with HTML, CSS, and JavaScript (GeeksforGeeks)  
+> This project has been extended with several additional features for improved usability, data management, and visualization.
 
-  4. Export Data as CSV
-  Export Functionality:
-    Added a button to export all expenses as a CSV file for easy sharing or backup.
+---
+
+## 🚀 What I Added
+
+### 1️⃣ Improved Categorization
+- **Dynamic Category Management**  
+  - Users can add new categories and delete existing ones.
+  - The expense form and filter dropdowns update automatically to reflect the current list of categories.
+
+### 2️⃣ Simple Data Visualization (Chart.js)
+- **Interactive Pie Chart**  
+  - Integrated a pie chart using Chart.js to visually display spending distribution by category.
+  - The chart updates automatically whenever expenses or categories are modified.
+
+### 3️⃣ Basic Budgeting
+- **Set a Monthly Budget**  
+  - Users can input a target monthly budget.
+  - The app displays a warning message if spending approaches or exceeds the budget.
+
+### 4️⃣ Export Data as CSV
+- **Export Functionality**  
+  - Added a feature to export all expenses as a CSV file.
+  - Useful for sharing data, backups, or external analysis.
+
+---
+
+## 🛠 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/expense-tracker.git
