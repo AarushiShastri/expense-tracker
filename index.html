@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="Expense Name" required />
+            <input type="number" id="expense-amount" placeholder="Amount" required />
+            <select id="expense-category" required>
+                <option value="" disabled selected>Select Category</option>
+                <!-- Categories will be filled by JS -->
+            </select>
+            <input type="date" id="expense-date" required />
+            <button type="submit">Add Expense</button>
+        </form>
+        <div class="category-management">
+            <input type="text" id="new-category" placeholder="New category">
+            <button id="add-category-btn">Add Category</button>
+            <button id="delete-category-btn">Delete Selected</button>
+        </div>
+        <div class="expense-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-list"></tbody>
+            </table>
+            <div class="total-amount">
+                <strong>Total:</strong> $<span id="total-amount">0</span>
+            </div>
+        </div>
+        <div class="filter">
+            <label for="filter-category">Filter by Category:</label>
+            <select id="filter-category">
+                <option value="All">All</option>
+                <!-- Categories will be filled by JS -->
+            </select>
+        </div>
+        <div class="budget-section">
+            <input type="number" id="user-budget" placeholder="Set monthly budget">
+            <button id="set-budget-btn">Set Budget</button>
+            <div id="budget-warning" style="color: red; margin-top: 10px;"></div>
+        </div>
+        <button id="export-btn">Export to CSV</button>
+        <div class="chart-container">
+            <canvas id="expenseChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

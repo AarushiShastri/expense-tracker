@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #9bdebe; /* Sea Foam Green */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #21342a; /* Black Leather Jacket */
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  border: 1px solid #8e8878; /* Middle Grey */
+  border-radius: 4px;
+}
+
+form button, .category-management button {
+  background-color: #2f9062; /* Sea Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover, .category-management button:hover {
+  background-color: #296346; /* Deep Moss Green */
+}
+
+.category-management {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.category-management input, .category-management button {
+  padding: 10px;
+  border: 1px solid #8e8878; /* Middle Grey */
+  border-radius: 4px;
+}
+
+.expense-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.expense-table th, .expense-table td {
+  padding: 10px;
+  border: 1px solid #8e8878; /* Middle Grey */
+  text-align: left;
+}
+
+.expense-table th {
+  background-color: #8e8878; /* Middle Grey */
+  color: white;
+}
+
+.total-amount {
+  text-align: right;
+  font-size: 18px;
+  color: #21342a; /* Black Leather Jacket */
+}
+
+.filter {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.filter label {
+  margin-right: 10px;
+  color: #21342a; /* Black Leather Jacket */
+}
+
+.filter select {
+  padding: 10px;
+  border: 1px solid #8e8878; /* Middle Grey */
+  border-radius: 4px;
+}
+
+.budget-section {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.budget-section input, .budget-section button {
+  padding: 10px;
+  border: 1px solid #8e8878; /* Middle Grey */
+  border-radius: 4px;
+}
+
+.budget-section button {
+  background-color: #296346; /* Deep Moss Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.budget-section button:hover {
+  background-color: #21342a; /* Black Leather Jacket */
+}
+
+.chart-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#export-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ccbca3; /* Dark Vanilla */
+  color: #21342a; /* Black Leather Jacket */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#export-btn:hover {
+  background-color: #8e8878; /* Middle Grey */
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form, .category-management {
+    flex-direction: column;
+  }
+
+  form input, form select, form button,
+  .category-management input, .category-management button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .expense-table table {
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .filter, .budget-section {
+    text-align: left;
+  }
+}
